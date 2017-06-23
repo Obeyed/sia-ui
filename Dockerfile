@@ -1,17 +1,3 @@
-# run the following to allow docker to use X server
-#   xhost local:root
-#
-# once the container has been run once, you should chown of the created folders
-#   sudo chown -R $(whoami) ~/.siacoin
-#
-# run the container with
-#   docker run --rm -it \
-#      -v /tmp/.X11-unix:/tmp/.X11-unix \
-#      -e DISPLAY=unix$DISPLAY \
-#      -v ~/.siacoin/:/root/ \
-#      -p 9981:9981 -p 9982:9982 \
-#      obeid/sia
-
 FROM debian:sid-slim
 
 LABEL maintainer "Elias Obeid <ekobeid@gmail.com>"
