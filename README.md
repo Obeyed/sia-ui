@@ -3,7 +3,7 @@
 # Run the container
 
 ```
-docker run --rm -it \
+docker run --rm -d \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -e DISPLAY=unix$DISPLAY \
   -v ~/.siacoin/:/root/ \
