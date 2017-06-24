@@ -21,5 +21,5 @@ xhost local:root
 Furthermore, when you've run the container once, you should `chown` of the created folders, so your user owns them.
 
 ```
-sudo chown -R $(whoami) ~/.siacoin
+sudo chown -R $(whoami):$(whoami) ~/.siacoin
 ```
